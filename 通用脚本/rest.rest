@@ -1,0 +1,16 @@
+# @host=10.108.4.75:8084
+@host=127.0.0.1:8081
+
+
+### 1、测试接口ok
+GET http://{{host}}/test HTTP/1.1
+Content-Type: application/json
+
+### 2、;
+POST http://{{host}}/test HTTP/1.1
+Content-Type: application/json
+
+{
+    "timeout": 1,
+    "orderId": "123456",
+}
